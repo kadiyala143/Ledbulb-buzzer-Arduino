@@ -1,8 +1,13 @@
+// Written by Sai Nikhil Kadiyala
 
-int LED1 = 10;
-int LED2 = 11;
-int LED3 = 12;
-int buzzer = 9;
+lED bulb, Buzzer with Arduino 
+
+
+
+int LED1 = 10;  // Connect the positive pin of first LED bulb to this pin
+int LED2 = 11;  // Connect the positive pin of Second LED bulb to this pin
+int LED3 = 12;  // Connect the positive pin of third LED bulb to this pin
+int buzzer = 9; // Connect the positive pin of buzzer to this pin
 
 
 
@@ -18,6 +23,8 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+
+// Method-1 
 
   digitalWrite(10, HIGH);
   tone(9, 1000);
@@ -38,6 +45,8 @@ void loop() {
   delay(200);
    noTone(9);
   
+
+// Method -2
 
 //analogWrite(10, 200);
 //delay(200);
